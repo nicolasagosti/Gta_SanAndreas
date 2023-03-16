@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_auto.css">
+    <title>AUTOS</title>
+</head>
+<body>
+    <main class="contenedor">
+        <div class="columna">
+            <h1>Mc-Laren</h1>
+            <img class="imagen" src="Imagenes/mc_laren.jpeg" alt="">
+            <h5>Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non, maxime error laudantium hic dolores quos ipsum aut 
+                quod voluptas aliquam deleniti quisquam qui quia ullam, aspernatur ab odit natus?</h5>
+                <p class="blue">precio:$usd: 520.000</p>
+                <p id="precioTotal">EL precio total</p>
+            <button id="boton"> comprar </button>
+        </div>
+        <div class="columna">
+            <h1>BMW-M850i</h1>
+            <img class="imagen" src="Imagenes/bmw_m850.jpg" alt="">
+            <h5>Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non, maxime error laudantium hic dolores quos ipsum aut 
+                quod voluptas aliquam deleniti quisquam qui quia ullam, aspernatur ab odit natus?</h5>
+                <p class="blue">precio:$usd: 300.000</p>
+                <p id="precioTotal1">EL precio total</p>
+            <button id="boton1"> comprar </button>
+        </div>
+        <div class="columna">
+            <h1>Mc-Laren</h1>
+            <img class="imagen" src="Imagenes/mc_laren.jpeg" alt="">
+            <h5>Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non, maxime error laudantium hic dolores quos ipsum aut 
+                quod voluptas aliquam deleniti quisquam qui quia ullam, aspernatur ab odit natus?</h5>
+                <p class="blue">precio:$usd: 520.000</p>
+                <p id="precioTotal">EL precio total</p>
+            <button class="boton"> comprar </button>
+        </div>
+        <br>
+        <div class="columna"> 
+            <h1>Mc-Laren</h1>
+            <img class="imagen" src="Imagenes/mc_laren.jpeg" alt="">
+            <h5>Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non, maxime error laudantium hic dolores quos ipsum aut 
+                quod voluptas aliquam deleniti quisquam qui quia ullam, aspernatur ab odit natus?</h5>
+            <p class="blue">precio:$usd: 520.000</p>
+            <p id="precioTotal">EL precio total</p>
+            <button class="boton"> comprar </button>
+        </div>
+    
+        <script>
+            var cantidad_MC_LAREN = 0;
+            var Total_MC_LAREN = 0;
+
+            const boton = document.getElementById("boton");
+            boton.addEventListener("click",CargarTotal_MC_LAREN);
+
+            const boton1 = document.getElementById("boton1");
+            boton1.addEventListener("click",CargarTotalBmw);
+
+          
+            const precioTotal_mclaren = document.getElementById("precioTotal");
+            const precioTotal_bmw = document.getElementById("precioTotal1");
+
+            function CargarTotal_MC_LAREN(){
+                cantidad_MC_LAREN = prompt("ingrese la cantidad que desea comprar");
+                console.log(cantidad_MC_LAREN);
+                precioTotal_mclaren.textContent = ("el precio total es de: "+ (cantidad_MC_LAREN * 520000));
+                return cantidad_MC_LAREN;
+            }
+
+            function CargarTotalBmw(){
+                cantidad_BMW = prompt("ingrese la cantidad que desea llevarse");
+                console.log(cantidad_BMW);
+                precioTotal_bmw.textContent = ("el precio total es de: " + (cantidad_BMW * 300000))
+                return cantidad_BMW;
+            }
+           /* ModificarTotal(){
+                total = (cantidad *520000);
+                console.log(total);
+                return total;
+            }
+            */
+        </script>
+    </main>
+</body>
+</html>

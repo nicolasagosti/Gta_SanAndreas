@@ -1,0 +1,156 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(Imagenes/GTA1.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-origin: padding-box;
+
+}
+
+.icono{
+    max-width: 70px;
+    max-height: 70px;
+    align-self: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.principal {
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+}
+
+.iconopistola{
+   margin-bottom: 20px;
+}
+.auto{
+    background-color: rgb(85, 85, 85);
+    min-height: 21rem;
+}
+.pistola{
+    background-color: rgb(60, 182, 223);
+    background-blend-mode:darken;
+    min-height: 7.4rem;
+
+}
+.rockstar{
+    background-color: rgb(221, 101, 54);
+    min-height: 21rem;
+}
+.columna{
+    border-color: black;
+    padding: 1.2rem;
+    width: 25%;
+    overflow: hidden;
+    transition: .6s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+}
+.columna.activa{
+    width: 50%;
+    text-align: center;
+}
+.columna:first-of-type{
+    border-radius: 1rem 0 0 1rem;
+}
+.columna:last-of-type{
+    border-radius: 0 1rem 1rem 0;
+}
+.enlace{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    margin-top: 0px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+
+}
+.enlace:hover{
+    background-color: rgba(141, 2, 108, 0.9);
+    color: black;
+   
+}
+p{
+    font-size: 9px;
+    margin-bottom: 3rem;
+    flex-grow: 1;
+}
+.pistola{
+   
+}
+.enlace .rockstar1{
+    color: salmon;
+}
+.rockstar1{
+    color:  rgb(221, 101, 54);;
+}
+.pistola1{
+    color: rgb(4, 142, 188);
+}
+.auto1{
+    color: rgb(85, 85, 85);
+}
+.titulo:hover{
+color: black;
+}
+.texto{
+    flex-grow: 1;
+}
+.cabeza {
+    text-align: center;
+    position: relative; /* Para poder usar position absolute en ::before */
+    margin: 50px auto;
+    border-radius: 2rem;
+    padding: 0.3rem 1rem;
+    width: 44%;
+    height: 40%;
+  }
+  
+  .cabeza::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(Imagenes/pistola.4.jpeg);
+    background-size: contain;
+    opacity: 0.5; /* Opacidad del fondo */
+    border-radius: 2rem;
+  }
+  
+  .cabeza h1 {
+    color: black;
+
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: 40px;
+    margin: 0;
+    padding: 0.3rem 1rem;
+    position: relative; /* Para poder estar por encima de ::before */
+    z-index: 1; /* Para estar por encima de ::before */
+    padding: 0;
+  }
+#centrar{
+    display: flex;
+  
+}
+header{
+    margin-bottom: 100px;
+}

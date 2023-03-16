@@ -1,0 +1,51 @@
+.contenedor {
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px; /* aumentamos el ancho máximo */
+    margin: auto;
+  }
+  
+  .columna {
+    border-color: black;
+    padding: 1.2rem;
+    width: 250px;
+    overflow: hidden;
+    transition: .6s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: rgb(113, 57, 4);
+    margin: 1%;
+    border: 5px solid rgb(93, 46, 3);
+    width: calc((100% - 40px) / 3); /* dividimos el ancho disponible entre 3 columnas y le restamos el espacio de los márgenes */
+    margin: 10px;
+}
+
+.columna:first-child{
+    border-radius: 1rem;
+}
+.columna:last-child{
+    border-radius: 1rem;
+}
+.columna h1{
+    text-align: center;
+}
+.imagen{
+    width: 16rem;
+    height: 9rem;
+}
+.blue{
+    color: rgb(39, 179, 225);
+    text-decoration: underline;
+    font-size: 15px;
+}
+.boton{
+    border-radius: 10px;
+}
+
+#precioTotal{
+    color: rgb(61, 125, 253);
